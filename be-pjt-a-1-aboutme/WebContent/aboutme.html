@@ -4,87 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .header{
-            height:100px;
-            background-color: #fff;
-            margin: 1px 0px 12px 0px;
-        }
-        .main{
-            height:auto;
-            background-color: #fff;
-            margin: 1px 0px 12px 0px;
-        }
-        .footer{
-            height:auto;
-            background-color: #fff;
-            margin: 1px 0px 12px 0px;
-        }
-        button.headerbutton{
-            background:#8fbbc6;
-            color: #4f457a;
-            font-size:1em; 
-            border-radius:0.5em; 
-            padding:5px 20px; 
-            display:inline;
-            float:right;
-            margin:28px 18px;
-        }
-        .centered { 
-            display: table; 
-            margin-left: auto;
-            margin-right: auto; 
-            text-align: center;
-        }
-        .leftaligned { 
-            display: table; 
-            margin-left: 10%;
-            margin-right: 10%;
-            text-align: left;
-        }
-        div.clear{
-            clear:both;
-        }
-        div.main > .centered > img{
-            margin: 10px;
-        }
-        button{
-            border-radius: 4px;
-        }
-        a.mainbutton{
-            background: #8fbbc6;
-            color: white;
-            font-size: 1em;
-            border-radius: 0.5em;
-            padding: 28px 20px;
-            margin: 28px 18px;
-            text-decoration: none;
-            display: inline-block;
-            width:50px;
-        }
-    </style>
+    <link rel= "stylesheet" type="text/css" href="./css/styletest.css">
 </head>
 <body bgcolor=#a6c6b9>
     <header class="header">
-        <button
-            type="button"
-            class="headerbutton"
-            onclick="location.href='index.html'">홈
+        <button type="button" id="home" class="headerbutton" onclick="location.href='index.html'">홈
         </button>
-        <button
-            type="button"
-            class="headerbutton"
-            onclick="location.href='aboutme.html'">자기소개
+        <button type="button" onclick="location.href='aboutme.html'" class="headerbutton" id="intro">자기소개
         </button>
-        <button
-            type="button"
-            class="headerbutton"
-            onclick="location.href='photo.html'">내 사진
+        <button type="button" onclick="location.href='photo.html'" id="photo" class="headerbutton">내 사진
         </button>
-        <button
-            type="button"
-            class="headerbutton"
-            onclick="location.href='http://localhost:8080/be-pjt-a-1-aboutme/timeservlet'">몇시예요?
+        <button type="button" onclick="location.href='http://localhost:8080/be-pjt-a-1-aboutme/timeservlet'" id="clock" class="headerbutton">몇시예요?
         </button>
     </header>
 
